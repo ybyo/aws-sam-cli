@@ -227,7 +227,7 @@ for:
 
     install:
       - ps: (new-object net.webclient).DownloadFile('https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.0.1/Rancher.Desktop.Setup.1.0.1.exe', 'rancher.exe')
-      - ps: .\rancher.exe /S
+      - "rancher.exe /S"
 
     #   - ps: Install-Product node $env:NODE_VERSION
     #   - "SET PATH=%PYTHON_HOME%;%PATH%"
