@@ -2,7 +2,7 @@ version: 1.0.{build}
 image: 
   # - Ubuntu
   # - Visual Studio 2019
-  - Visual Studio 2015
+  - Visual Studio 2019
 
 environment:
   AWS_DEFAULT_REGION: us-east-1
@@ -223,7 +223,7 @@ for:
   - 
     matrix:
       only:
-        - image: Visual Studio 2015
+        - image: Visual Studio 2019
 
     install:
       - ps: (new-object net.webclient).DownloadFile('https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.0.1/Rancher.Desktop.Setup.1.0.1.exe', 'rancher.exe')
